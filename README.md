@@ -17,7 +17,7 @@ The UI consists of Angular Material and Bootstrap for the look and feel, respons
 Angular Material needs to be installed with the following ng serve command below in the instalation instructions.
 
 
-# Instalation Instructions:
+# Installation Instructions:
 
 ## Make sure you have Node installed globally
 NodeJs (v8 or greater)
