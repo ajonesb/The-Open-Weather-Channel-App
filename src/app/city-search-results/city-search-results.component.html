@@ -1,0 +1,45 @@
+<!-- Template for the city component -->
+  <div style="padding: 0px 13px; text-align:center;">   
+      <h1 class="mt-5">
+        Extended Forecast Search Results
+      </h1>
+      <p>Here are your search results for the extended forecast for every 3 hours in the next 5 days</p>
+  </div>
+
+  <div>
+        
+      <h2 style="text-align:center"  *ngIf="dataCity.city">
+        <img src="https://openweathermap.org/img/w/{{dataCity.list[0].weather[0].icon}}.png" class="forecast-icon" alt="forecast">
+        {{dataCity.list[0].weather[0].description}} in {{dataCity.city.name}}, {{dataCity.city.country}}
+      </h2> 
+      
+      <div class="return-home-btn-wrap">
+        <button mat-raised-button [color]="'return-btn'" (click)="returnHome()" class="mt-2 mb-2">Return to Homepage</button>
+      </div>
+
+    <div>
+      <table class="table-responsive-md table table-bordered table-striped" mat-table>
+          <thead class="thead-dark">
+            <tr>
+              <th>DATE | TIME</th>
+              <th>TEMPERATURE MIN/MAX (C)</th>
+              <th>HUMIDITY</th>
+              <th>FORECAST</th>
+              <th></th>
+              <th>WIND SPEED(m/s)</th>
+            </tr>
+          </thead>
+        <tbody>
+          <tr *ngFor="let cityForecast of dataCity.list">
+            <td>{{cityForecast.dt_txt}}</td>
+            <td>{{cityForecast.main.temp_min}}/{{cityForecast.main.temp_max}}</td>
+            <td>{{cityForecast.main.humidity}}</td>
+            <td><img src="https://openweathermap.org/img/w/{{cityForecast.weather[0].icon}}.png" class="forecast-icon" alt="forecast"></td>
+            <td>{{cityForecast.weather[0].description}}</td>
+            <td>{{cityForecast.wind.speed}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

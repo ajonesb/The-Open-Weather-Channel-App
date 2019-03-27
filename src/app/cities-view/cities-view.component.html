@@ -1,0 +1,25 @@
+<div class="top-search">
+  <app-city-search></app-city-search>
+  <div>   
+      <p>Click on any city below to view the extended forecast</p>
+  </div>
+</div>
+
+<div>
+  <table class="table table-bordered table-striped table-hover" mat-table>
+    <thead class="thead-dark">
+      <tr>
+        <th id="city-label">CITY</th>
+        <th id="city-temperature-label">AVERAGE TEMPERATURE (C)</th>
+        <th id="city-wind-label">AVERAGE WIND STRENGTH (m/s)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let city of data.list">
+        <td class="forecast-info-main"><img src="https://openweathermap.org/img/w/{{city.weather[0].icon}}.png" class="forecast-icon" alt="forecast"><a [routerLink]="['/city', city.id]">{{city.name}}</a></td>
+        <td class="forecast-info">{{city.main.temp}}</td>
+        <td class="forecast-info-sec">{{city.wind.speed}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>  
