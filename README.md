@@ -80,4 +80,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## View Live Demo of Application
 
-http://the-open-weather-app-angular.s3-website-us-east-1.amazonaws.com/city-name/london
+http://the-open-weather-app-angular.s3-website-us-east-1.amazonaws.com/app-cities-view
