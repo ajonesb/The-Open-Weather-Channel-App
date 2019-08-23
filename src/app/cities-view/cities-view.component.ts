@@ -13,7 +13,7 @@ import 'rxjs/add/operator/catch';
 })
 export class CitiesViewComponent {
 
-  private apiEndpoint = 'https://api.openweathermap.org/data/2.5/group?id=2968815,3128759,6355233,6535297,2759794&units=metric&appid=b301cf14216627567c5cde76fd1a0a8c';
+  private apiEndpoint = 'https://api.openweathermap.org/data/2.5/group?id=2147714,2175411,2147821,2156671,2158177&units=imperial&appid=b301cf14216627567c5cde76fd1a0a8c';
   data: any = {};
 
   constructor(private http: HttpClient) {
