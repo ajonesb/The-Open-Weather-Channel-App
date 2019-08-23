@@ -28,24 +28,24 @@ export class AppPage {
 
   // Test if Cities are showing from API
 
-  getParisApiLink() {
-    return element(by.css('[ng-reflect-router-link="/city,2968815"]'));
+  getSydneyApiLink() {
+    return element(by.css('[ng-reflect-router-link="/city,2147714"]'));
   }
 
-  getBarcelonaApiLink() {
-    return element(by.css('[ng-reflect-router-link="/city,3128759"]'));
+  getBlacktownApiLink() {
+    return element(by.css('[ng-reflect-router-link="/city,2175411"]'));
   }
 
-  getMadridApiLink() {
-    return element(by.css('[ng-reflect-router-link="/city,6355233"]'));
+  getSurryHillsApiLink() {
+    return element(by.css('[ng-reflect-router-link="/city,2147821"]'));
   }
 
-  getSanVitalianoApiLink() {
-    return element(by.css('[ng-reflect-router-link="/city,6535297"]'));
+  getMountDruittApiLink() {
+    return element(by.css('[ng-reflect-router-link="/city,2156671"]'));
   }
 
-  getAmsterdamApiLink() {
-    return element(by.css('[ng-reflect-router-link="/city,2759794"]'));
+  getMelbourneApiLink() {
+    return element(by.css('[ng-reflect-router-link="/city,2158177"]'));
   }
 
 
