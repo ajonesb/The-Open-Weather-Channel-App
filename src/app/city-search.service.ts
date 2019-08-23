@@ -19,7 +19,7 @@ export class CitySearchService {
 
     baseUrl: string = 'https://api.openweathermap.org/data/2.5/weather';
     queryUrl: string = '?q=';
-    endUrl: string = '&units=metric&appid=b301cf14216627567c5cde76fd1a0a8c';
+    endUrl: string = '&units=imperial&appid=b301cf14216627567c5cde76fd1a0a8c';
 
 /* private apiEndpoint = 'https://api.openweathermap.org/data/2.5/weather&units=metric&appid=b301cf14216627567c5cde76fd1a0a8c';
    data: any = {}; */
