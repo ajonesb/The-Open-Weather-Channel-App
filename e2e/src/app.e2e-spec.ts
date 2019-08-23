@@ -26,9 +26,9 @@ describe('Open Weather App', () => {
     expect(page.getCityTextbox()).toEqual('CITY');
   });
 
-  it('should display AVERAGE TEMPERATURE (C) label.', () => {
+  it('should display AVERAGE TEMPERATURE (F) label.', () => {
     page.navigateTo();
-    expect(page.getTemperatureTextbox()).toEqual('AVERAGE TEMPERATURE (C)');
+    expect(page.getTemperatureTextbox()).toEqual('AVERAGE TEMPERATURE (F)');
   });
 
   it('should display AVERAGE WIND STRENGTH (m/s) label.', () => {
@@ -38,29 +38,29 @@ describe('Open Weather App', () => {
 
    // Test if Cities Are Showing From API
 
-  it ('Should show correctly city of Paris from API Data.', () => {
+  it ('Should show correctly city of Sydney from API Data.', () => {
     page.navigateTo();
-    expect(page.getParisApiLink().getText()).toEqual('Paris');
+    expect(page.getSydneyApiLink().getText()).toEqual('Paris');
   });
 
-  it ('Should show correctly city of Barcelona from API Data.', () => {
+  it ('Should show correctly city of Blacktown from API Data.', () => {
     page.navigateTo();
-    expect(page.getBarcelonaApiLink().getText()).toEqual('Província de Barcelona');
+    expect(page.getBlacktownApiLink().getText()).toEqual('Província de Barcelona');
   });
 
-  it ('Should show correctly city of Madrid from API Data.', () => {
+  it ('Should show correctly city of Surry Hills from API Data.', () => {
     page.navigateTo();
-    expect(page.getMadridApiLink().getText()).toEqual('Provincia de Madrid');
+    expect(page.getSurryHillsApiLink().getText()).toEqual('Provincia de Madrid');
   });
 
-  it ('Should show correctly city of San Vitaliano from API Data.', () => {
+  it ('Should show correctly city of Mount Druitt from API Data.', () => {
     page.navigateTo();
-    expect(page.getSanVitalianoApiLink().getText()).toEqual('San Vitaliano');
+    expect(page.getMountDruittApiLink().getText()).toEqual('San Vitaliano');
   });
 
-  it ('Should show correctly city of Amsterdam from API Data.', () => {
+  it ('Should show correctly city of Melbourne from API Data.', () => {
     page.navigateTo();
-    expect(page.getAmsterdamApiLink().getText()).toEqual('Amsterdam');
+    expect(page.getMelbourneApiLink().getText()).toEqual('Amsterdam');
   });
 
 
