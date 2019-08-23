@@ -37,7 +37,7 @@ export class CitiesForecastViewComponent implements OnInit {
 
     getCityForecast(cityId) {
         console.log(cityId);
-        this.cityApiUrl = 'https://api.openweathermap.org/data/2.5/forecast?id=' + cityId + '&units=metric&appid=b301cf14216627567c5cde76fd1a0a8c';
+        this.cityApiUrl = 'https://api.openweathermap.org/data/2.5/forecast?id=' + cityId + '&units=imperial&appid=b301cf14216627567c5cde76fd1a0a8c';
     }
 
     getCityData() {
