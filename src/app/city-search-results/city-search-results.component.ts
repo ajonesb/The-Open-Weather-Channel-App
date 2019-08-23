@@ -30,7 +30,7 @@ export class CitySearchResultsComponent {
 
     getCityForecastSearch(cityName) {
         console.log(cityName);
-        this.apiCityUrl = 'https://api.openweathermap.org/data/2.5/forecast?q=' + cityName + '&units=metric&appid=b301cf14216627567c5cde76fd1a0a8c';
+        this.apiCityUrl = 'https://api.openweathermap.org/data/2.5/forecast?q=' + cityName + '&units=imperial&appid=b301cf14216627567c5cde76fd1a0a8c';
     }
 
     getCitySearchData() {
